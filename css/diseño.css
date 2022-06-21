@@ -270,6 +270,15 @@ body main div:hover{
 }
 }
 
+.texto-color{
+    color: #361500;
+    font-weight: bold;
+}
+.texto-color__menus{
+    color: #361500;
+    font-weight: bold;
+    background-color:#CC9544;
+}
 body main div img{
     align-content: center;
 }
@@ -303,6 +312,10 @@ header h1{
     background-image: url(/assets/imagenes/gato-wallpaper-1.jpeg) ;
     padding: 1%;
 }
+.bodygatitos__cuestionario{
+    display: flex;
+    justify-content: center;
+}
 
 main{
     grid-area: main;
@@ -333,16 +346,6 @@ main{
     height: 30rem;
 }
 
-.tarjeta__titulo{
-    font-size: 2rem;
-    margin: 0.2rem;
-}
-.tarjeta__texto{
-    font-size: 1rem;
-    margin: 0.3rem;
-    text-align: justify;
-}
-
 .tarjeta__diasyhora{
     display: flex;
     flex-direction: column;
@@ -355,7 +358,6 @@ main{
 .tarjeta__foto{
     width: 17rem;
     height: 17rem;
-    border-radius: 2rem;
     object-fit:contain;
     margin-top: 1rem;
     overflow: hidden;
@@ -385,6 +387,7 @@ aside{
     padding: 1rem;
     margin: 1rem 12rem;
     border-radius: 2rem;
+    width: 37rem;
     display: flex;
     justify-content: center;
 }
@@ -394,6 +397,7 @@ aside{
     margin: 1rem;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .cuestionario__part{
@@ -435,7 +439,6 @@ aside{
 footer{
     background-color: #361500;
     color: #CC9544;
-    padding: 0.5rem;
     text-align: right;
     grid-area: footer;
     display: flex;
@@ -512,6 +515,11 @@ footer{
     nav li{
         margin: 0.1rem;
         padding: 0.3rem 0.1rem;
+    }
+    .active{
+        margin: 0.1rem;
+        padding: 0.3rem 0.1rem;
+        margin-bottom: 0px;
     }
     .img-logo-nav{
         height: 2.1rem;
