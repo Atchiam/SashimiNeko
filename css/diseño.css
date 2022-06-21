@@ -25,72 +25,6 @@ body{
     height: 100%;
 }
 
-body main div{
-    background-color: #361500;
-    width: 20%;
-    padding: 1rem;
-    margin: 1rem;
-    border: 0.5rem solid #603601;
-    border-radius: 15%;
-}
-
-body main div img{
-    align-content: center;
-}
-body main form fieldset div div label{
-    padding: 0.5rem;
-} 
-.cuestionario{
-    background-color:#361500;
-    padding: 1rem;
-    margin: 1rem 12rem;
-    border-radius: 2rem;
-    display: flex;
-    justify-content: center;
-}
-
-.cuestionario__body{
-    padding: 1rem;
-    margin: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.cuestionario__part{
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    font-size: 1.5rem;
-    margin: 0.3rem;
-    padding: 1.5rem;
-}
-.cuestionario__completar{
-    display: flex;
-    width: 30rem;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-}
-.cuestionario__btn{
-    width: auto;
-    color: #000;
-    margin: 1rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: space-between;
-    align-items: baseline;
-}
-
-.btn__cuestionario{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
 nav {
     background-color:#361500 ;
     color: black;
@@ -103,6 +37,28 @@ nav {
     top: 0px;
     grid-area: nav;
     align-self: baseline;
+    z-index: 100
+}
+.scale-in-ver-bottom {
+-webkit-animation: scale-in-ver-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+        animation: scale-in-ver-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+}
+
+@keyframes scale-in-ver-bottom {
+0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+    opacity: 1;
+}
+100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+    opacity: 1;
+}
 }
 
 .logo{
@@ -114,6 +70,7 @@ nav ul {
     flex-direction: row;
     flex-wrap: wrap;
 }
+
 nav li{
     color: black;
     background-color: #8d6830;
@@ -122,13 +79,22 @@ nav li{
     margin-bottom: 0px;
     border-radius: 25px 25px 0px 0px;
     display: flex;
+    transition: 0s;
+}
+
+nav li:hover {
+    color: black;
+    background-color: #e0a44a;
+    margin: 0.5rem;
+    padding: 1rem 3rem;
+    margin-bottom: 0px;
 }
 
 .active{
     color: black;
     background-color: #e0a44a;
     margin: 0.5rem;
-    padding: 1.2rem 3rem;
+    padding: 1rem 3rem;
     margin-bottom: 0px;
     border-radius: 25px 25px 0px 0px;
     display: flex;
@@ -148,8 +114,54 @@ nav li{
     background-size:cover;
     height: 46rem;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
 }
+
+.title__main {
+    text-align: center;
+    font-style: normal;
+    font-size: 5rem;
+    font-family: 'Tiro Devanagari Marathi', serif;
+}
+.text-pop-up-top {
+	-webkit-animation: text-pop-up-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	    animation: text-pop-up-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes text-pop-up-top {
+0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    text-shadow: none;
+}
+100% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    text-shadow: 0 1px 0 #603601, 0 2px 0 #361500, 0 3px 0 #361500, 0 4px 0 #361500, 0 5px 0 #361500, 0 6px 0 #361500, 0 7px 0 #361500, 0 8px 0 #361500, 0 9px 0 #361500, 0 50px 30px rgba(0, 0, 0, 0.3);
+}
+}
+@keyframes text-pop-up-top {
+0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    text-shadow: none;
+}
+100% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    text-shadow: 0 1px 0 #361500, 0 2px 0 #361500, 0 3px 0 #361500, 0 4px 0 #361500, 0 5px 0 #361500, 0 6px 0 #361500, 0 7px 0 #361500, 0 8px 0 #361500, 0 9px 0 #361500, 0 50px 30px rgba(0, 0, 0, 0.3);
+}
+}
+
 
 .cont-img-portada{
     width: 70%;
@@ -158,10 +170,122 @@ nav li{
     background-color: rgba(127, 255, 212, 0);
 }
 
+.kenburns-right {
+    -webkit-animation: kenburns-right 1.5s ease-in-out reverse backwards;
+            animation: kenburns-right 1.5s ease-in-out reverse backwards;
+}
+
+@-webkit-keyframes kenburns-right {
+    0% {
+    -webkit-transform: scale(1) translate(0, 0);
+            transform: scale(1) translate(0, 0);
+    -webkit-transform-origin: 84% 50%;
+            transform-origin: 84% 50%;
+    }
+    100% {
+    -webkit-transform: scale(1.25) translateX(20px);
+            transform: scale(1.25) translateX(20px);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    }
+}
+@keyframes kenburns-right {
+    0% {
+        -webkit-transform: scale(1) translate(0, 0);
+        transform: scale(1) translate(0, 0);
+        -webkit-transform-origin: 84% 50%;
+        transform-origin: 84% 50%;
+    }
+    100% {
+        -webkit-transform: scale(1.25) translateX(20px);
+        transform: scale(1.25) translateX(20px);
+        -webkit-transform-origin: right;
+        transform-origin: right;
+    }
+}
+
 .imag-portada{
     max-width: 100%;
     height: auto;
 }
+
+body main div{
+    background-color: #361500;
+    width: 20%;
+    padding: 1rem;
+    margin: 1rem;
+    border: 0.5rem solid #603601;
+    border-radius: 15%;
+}
+
+body main div:hover{
+-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.1s both;
+        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.1s both;
+}
+
+@-webkit-keyframes scale-up-center {
+0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+}
+}
+@keyframes scale-up-center {
+0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+}
+}
+
+.scale-down-center {
+-webkit-animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes scale-down-center {
+0% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+}
+100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+}
+@keyframes scale-down-center {
+0% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+}
+100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+}
+
+.texto-color{
+    color: #361500;
+    font-weight: bold;
+}
+.texto-color__menus{
+    color: #361500;
+    font-weight: bold;
+    background-color:#CC9544;
+}
+body main div img{
+    align-content: center;
+}
+
+body main form fieldset div div label{
+    padding: 0.5rem;
+} 
 
 header{
     background-color: #1C0A00;
@@ -188,21 +312,16 @@ header h1{
     background-image: url(/assets/imagenes/gato-wallpaper-1.jpeg) ;
     padding: 1%;
 }
+.bodygatitos__cuestionario{
+    display: flex;
+    justify-content: center;
+}
 
 main{
     grid-area: main;
     background-color: #603601;
     width: 100%;
     height: 100%;
-}
-
-.title__main {
-    text-align: center;
-    font-style: normal;
-    font-size: 4rem;
-    font-family: 'Tiro Devanagari Marathi', serif;
-    font-weight: 0rem;
-    text-decoration-line: underline;
 }
 
 .texto{
@@ -227,16 +346,6 @@ main{
     height: 30rem;
 }
 
-.tarjeta__titulo{
-    font-size: 2rem;
-    margin: 0.2rem;
-}
-.tarjeta__texto{
-    font-size: 1rem;
-    margin: 0.3rem;
-    text-align: justify;
-}
-
 .tarjeta__diasyhora{
     display: flex;
     flex-direction: column;
@@ -249,7 +358,6 @@ main{
 .tarjeta__foto{
     width: 17rem;
     height: 17rem;
-    border-radius: 2rem;
     object-fit:contain;
     margin-top: 1rem;
     overflow: hidden;
@@ -274,10 +382,63 @@ aside{
     background-color: #361500;
 }
 
+.cuestionario{
+    background-color:#361500;
+    padding: 1rem;
+    margin: 1rem 12rem;
+    border-radius: 2rem;
+    width: 37rem;
+    display: flex;
+    justify-content: center;
+}
+
+.cuestionario__body{
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.cuestionario__part{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    font-size: 1.5rem;
+    margin: 0.3rem;
+    padding: 1.5rem;
+}
+.cuestionario__completar{
+    display: flex;
+    width: 30rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.cuestionario__btn{
+    width: auto;
+    color: #000;
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.btn__cuestionario{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 footer{
     background-color: #361500;
     color: #CC9544;
-    padding: 0.5rem;
     text-align: right;
     grid-area: footer;
     display: flex;
@@ -285,7 +446,7 @@ footer{
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-
+    
 }
 .img_redes{
     width: 2rem;
@@ -354,6 +515,11 @@ footer{
     nav li{
         margin: 0.1rem;
         padding: 0.3rem 0.1rem;
+    }
+    .active{
+        margin: 0.1rem;
+        padding: 0.3rem 0.1rem;
+        margin-bottom: 0px;
     }
     .img-logo-nav{
         height: 2.1rem;
