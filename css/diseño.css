@@ -309,7 +309,7 @@ header h1{
 }
 
 .bodygatitos{
-    background-image: url(/assets/imagenes/gato-wallpaper-1.jpeg) ;
+    background-image: url(../assets/imagenes/gato-wallpaper-1.jpeg) ;
     padding: 1%;
 }
 .bodygatitos__cuestionario{
