@@ -107,7 +107,7 @@ nav li:hover {
 }
 
 .gato-portada{
-    background-image: url(/assets/imagenes/MainGato2.jpg);
+    background-image: url(./assets/imagenes/MainGato2.jpg);
     background-color: #1C0A00;
     background-position: center;
     background-repeat: no-repeat;
