@@ -391,6 +391,7 @@ nav {
   top: 0px;
   grid-area: nav;
   align-self: baseline;
+  z-index: 100;
 }
 nav a {
   margin-left: 5%;
