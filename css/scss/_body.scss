@@ -1,0 +1,39 @@
+body{
+    font-size:62.5%;
+    background-color: #1C0A00;
+    color:#CC9544;
+    width: 100%;
+    height: 100%;
+    main{
+        grid-area: main;
+        background-color: #603601;
+        width: 100%;
+        height: 100%;
+        form{
+            fieldset{
+                div{
+                    div{
+                        label{
+                            padding: 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+        div{
+            background-color: #361500;
+            width: 20%;
+            padding: 1rem;
+            margin: 1rem;
+            border: 0.5rem solid #603601;
+            border-radius: 15%;
+            &:hover{
+                -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.1s both;
+                animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.1s both;
+            }
+            img {
+                align-content: center;
+            }
+        }
+    }
+}

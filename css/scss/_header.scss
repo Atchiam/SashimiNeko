@@ -1,0 +1,18 @@
+header{
+    background-color: #1C0A00;
+    grid-area: header;
+    margin: 0rem 5rem;
+    h1{
+        text-align: center;
+        font-style: normal;
+        font-size: 2rem;
+        font-family: 'Tiro Devanagari Marathi', serif;
+        font-weight: 0rem;
+        text-decoration-line: underline;
+    }
+    p {
+        font-size: 1.2rem;
+        margin: 0.3rem;
+        text-align: justify;
+    }
+}

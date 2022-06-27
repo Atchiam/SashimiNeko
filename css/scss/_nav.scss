@@ -1,0 +1,42 @@
+nav {
+    background-color: $colorTersiario ;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    align-content: stretch;
+    position: sticky;
+    top: 0px;
+    grid-area: nav;
+    align-self: baseline;
+    a {margin-left: 5%;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        li{
+            color: black;
+            background-color: $colorNavOff;
+            margin: 0.5rem;
+            padding: 1rem 3rem;
+            margin-bottom: 0px;
+            border-radius: 25px 25px 0px 0px;
+            display: flex;
+            transition: 0s;
+            a {
+                color: $colorCuarto;
+                font-size: 1rem;
+                text-decoration: none;
+            }
+            &:hover{
+                color: black;
+                background-color: $colorNavOn;
+                margin: 0.5rem;
+                padding: 1rem 3rem;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}

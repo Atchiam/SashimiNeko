@@ -1,0 +1,81 @@
+@media(max-width:1024px){
+    nav li{
+        margin: 0.3rem;
+        padding: 1.1rem 2rem;
+    }
+    
+    .active{
+        margin: 0.3rem;
+        padding: 1.1rem 2rem;
+    }
+
+    .gato-portada{
+        height: auto;
+    }
+    .cont-img-portada{
+        width: auto;
+    }
+    .imag-portada{
+        max-width: 100%;
+    }
+
+    .cuestionario{
+        margin: 1rem 2rem;
+        width: 40rem;
+    }
+    .cuestionario__body {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+@media(max-width:768px){
+    nav li{
+        margin: 0.2rem;
+        padding: 0.5rem 0.7rem;
+    }
+    
+    .active{
+        margin: 0.2rem;
+        padding: 0.5rem 0.7rem;
+        margin-bottom: 0px;
+    }
+    .img-logo-nav{
+        height: 2.3rem;
+    }
+
+    .cuestionario{
+        margin: 1rem 2rem;
+        width: 25rem;
+    }
+    .cuestionario__completar{
+        width: 20rem;
+        justify-content: center;
+    }
+
+}
+@media(max-width:480px){
+
+    nav li{
+        margin: 0.1rem;
+        padding: 0.3rem 0.1rem;
+    }
+    .active{
+        margin: 0.1rem;
+        padding: 0.3rem 0.1rem;
+        margin-bottom: 0px;
+    }
+    .img-logo-nav{
+        height: 2.1rem;
+    }
+
+    .cuestionario{
+        margin:3rem;
+        width: 18rem;
+    }
+    .cuestionario__completar{
+        width: 13rem;
+        justify-content: center;
+    }
+}
