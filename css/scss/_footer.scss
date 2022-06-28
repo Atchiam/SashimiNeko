@@ -8,5 +8,15 @@ footer{
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    
+    div{
+        p{
+            font-size: 0.8rem;
+        }
+    }
+    a{
+        img{
+        width: 2rem;
+        margin: 0rem 0.3rem;
+        }
+    }
 }

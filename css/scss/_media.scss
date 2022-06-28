@@ -1,17 +1,49 @@
 @media(max-width:1024px){
-    nav li{
-        margin: 0.3rem;
-        padding: 1.1rem 2rem;
+    nav {
+        a {margin-left: 0.2%;
+        }
+        ul{
+            li{
+                margin: 0.3rem;
+                margin-bottom: 0rem;
+                padding: 1.1rem 2rem;
+                a {
+                    font-size: 1rem;
+                }
+                &:hover{
+                    margin: 0.3rem;
+                    margin-bottom: 0rem;
+                    padding: 1.1rem 2rem;
+                }
+            }
+        }
     }
     
     .active{
         margin: 0.3rem;
         padding: 1.1rem 2rem;
+        margin-bottom: 0rem;
     }
 
-    .gato-portada{
-        height: auto;
+    header{
+        margin: 0rem 2rem;
+        h1{
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: 1rem;
+            margin: 0rem;
+        }
     }
+
+    .container__menu{
+        grid-template-columns: 0.2fr repeat(4, 1fr);
+        grid-template-rows: repeat(2, 0.04fr) repeat(2, 4fr) 0.04fr;
+        grid-column-gap: 0.5rem;
+        grid-row-gap: 0.5rem;
+    }
+
+
     .cont-img-portada{
         width: auto;
     }
@@ -28,21 +60,107 @@
         flex-wrap: wrap;
         flex-direction: column;
     }
+
+    .tarjetas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        div{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: center;
+            align-content: center;
+            justify-content: space-between;
+            width: 21rem;
+            height: 30rem;
+            h3{
+                font-size: 1.8rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+            img{
+                width: 17rem;
+                height: 17rem;
+                object-fit:contain;
+                margin-top: 1rem;
+                overflow: hidden;
+            }
+        }
+    }
+
+    .tarjeta__diasyhora{
+        display: flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        width: auto;
+        p {
+            font-size: 2rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
+        ul{
+            li{
+                font-size: 1.1rem;
+            }
+        }
+        h3{font-size: 1rem;
+        }
+    }
 }
 
 @media(max-width:768px){
-    nav li{
-        margin: 0.2rem;
-        padding: 0.5rem 0.7rem;
+    nav {
+        a {margin-left: 1%;
+            img{
+                height: 2rem;
+            }
+        }
+        ul{
+            li{
+                margin: 0.2rem;
+                margin-bottom: 0rem;
+                padding: 0.5rem 0.7rem;
+                a {
+                    font-size: 1rem;
+                }
+                &:hover{
+                    margin: 0.2rem;
+                    margin-bottom: 0rem;
+                    padding: 0.5rem 0.7rem;
+                }
+            }
+        }
     }
-    
+
     .active{
         margin: 0.2rem;
+        margin-bottom: 0rem;
         padding: 0.5rem 0.7rem;
-        margin-bottom: 0px;
     }
-    .img-logo-nav{
-        height: 2.3rem;
+
+    aside{
+        form{
+            label{
+                h2{
+                    font-size: 1.5rem;
+                    margin: 0.5rem;
+                }
+                select {   
+                    font-size: 1rem;
+                    margin: 0.1rem;
+                    padding: 0.3rem 0.2rem;
+                    border-radius: 1rem;
+                    option{ 
+                        border-radius: 1rem;
+                    }
+                }
+            }
+        }
     }
 
     .cuestionario{
@@ -55,27 +173,135 @@
     }
 
 }
+
+
+
 @media(max-width:480px){
 
-    nav li{
-        margin: 0.1rem;
-        padding: 0.3rem 0.1rem;
-    }
-    .active{
-        margin: 0.1rem;
-        padding: 0.3rem 0.1rem;
-        margin-bottom: 0px;
-    }
-    .img-logo-nav{
-        height: 2.1rem;
+    nav {
+        a {margin-left: 1%;
+            img{
+                height: 1.5rem;
+            }
+        }
+        ul{
+            li{
+                margin: 0.1rem;
+                margin-bottom: 0px;
+                padding: 0.3rem 0.1rem;
+                a {
+                    font-size: 0.5rem;
+                }
+                &:hover{
+                    margin: 0.1rem;
+                    margin-bottom: 0px;
+                    padding: 0.3rem 0.1rem;
+                }
+            }
+        }
     }
 
+
+    .active{
+        margin: 0.1rem;
+        margin-bottom: 0px;
+        padding: 0.3rem 0.1rem;
+    }
+
+
+    .container__menu{
+        grid-template-columns: 0.1fr repeat(4, 1fr);
+        grid-template-rows: repeat(2, 0.04fr) repeat(2, 4fr) 0.04fr;
+        grid-column-gap: 0.5rem;
+        grid-row-gap: 0.5rem;
+    }
+
+
+    aside{
+        form{
+            label{
+                h2{
+                    font-size: 1rem;
+                    margin: 0.2rem;
+                }
+                select {   
+                    font-size: 0.8rem;
+                    margin: 0.1rem;
+                    padding: 0.3rem 0.2rem;
+                    border-radius: 1rem;
+                    option{ 
+                        border-radius: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .cuestionario__part{
+        font-size: 1rem;
+        margin: 0.3rem;
+        padding: 1.5rem;
+    }
     .cuestionario{
         margin:3rem;
-        width: 18rem;
+        width: 20rem;
     }
     .cuestionario__completar{
-        width: 13rem;
+        width: 16rem;
         justify-content: center;
+    }
+    .cuestionario__btn{
+        width: 9rem;
+        margin: 1rem;
+    }
+    .cuestionario__body{
+        margin: 0rem;
+    }
+
+
+    .tarjetas{
+        div{
+            width: 15rem;
+            height: 25rem;
+            h3{
+                font-size: 1rem;
+            }
+            p{
+                font-size: 0.8rem;
+            }
+            img{
+                width: 17rem;
+                height: 17rem;
+                object-fit:contain;
+                margin-top: 1rem;
+                overflow: hidden;
+            }
+        }
+    }
+
+    header{
+        margin: 0rem 0.5rem;
+        h1{
+            font-size: 1.2rem;
+        }
+        p {
+            font-size: 0.8rem;
+            margin: 0rem;
+        }
+    }
+
+    footer{
+        div{
+            p{
+                font-size: 0.4rem;
+            }
+        }
+        a{
+            img{
+            width: 1rem;
+            margin: 0rem 0.3rem;
+            }
+        }
     }
 }

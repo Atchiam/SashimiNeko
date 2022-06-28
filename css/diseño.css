@@ -102,46 +102,6 @@
   animation: scale-down-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-.texto {
-  font-size: 1.5rem;
-  margin: 0.3rem;
-  text-align: justify;
-}
-
-.tarjetas {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.tarjeta {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  align-content: center;
-  justify-content: space-between;
-  width: 21rem;
-  height: 30rem;
-}
-
-.tarjeta__diasyhora {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-  width: auto;
-}
-
-.tarjeta__foto {
-  width: 17rem;
-  height: 17rem;
-  object-fit: contain;
-  margin-top: 1rem;
-  overflow: hidden;
-}
-
 .btn {
   background-color: #CC9544;
   font-size: 1rem;
@@ -211,11 +171,6 @@
   justify-content: space-around;
 }
 
-.img_redes {
-  width: 2rem;
-  margin: 0rem 0.3rem;
-}
-
 .scale-in-ver-bottom {
   -webkit-animation: scale-in-ver-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
   animation: scale-in-ver-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
@@ -226,9 +181,59 @@
   background-color: #e0a44a;
   margin: 0.5rem;
   padding: 1rem 3rem;
-  margin-bottom: 0px;
+  margin-bottom: 0rem;
   border-radius: 25px 25px 0px 0px;
   display: flex;
+}
+
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.tarjetas div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  width: 21rem;
+  height: 30rem;
+}
+.tarjetas div h3 {
+  font-size: 1.8rem;
+}
+.tarjetas div p {
+  font-size: 1rem;
+}
+.tarjetas div img {
+  width: 17rem;
+  height: 17rem;
+  object-fit: contain;
+  margin-top: 1rem;
+  overflow: hidden;
+}
+
+.tarjeta__diasyhora {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  width: auto;
+}
+.tarjeta__diasyhora p {
+  font-size: 2rem;
+}
+.tarjeta__diasyhora h2 {
+  font-size: 2rem;
+}
+.tarjeta__diasyhora ul li {
+  font-size: 1.1rem;
+}
+.tarjeta__diasyhora h3 {
+  font-size: 1rem;
 }
 
 @-webkit-keyframes scale-up-center {
@@ -405,6 +410,7 @@ nav ul li {
   color: black;
   background-color: #8d6830;
   margin: 0.5rem;
+  margin-bottom: 0rem;
   padding: 1rem 3rem;
   margin-bottom: 0px;
   border-radius: 25px 25px 0px 0px;
@@ -447,6 +453,22 @@ aside {
   grid-area: aside;
   background-color: #361500;
 }
+aside form label h2 {
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+aside form label select {
+  background-color: #CC9544;
+  font-size: 1rem;
+  width: auto;
+  margin: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 1rem;
+  border: 0.2rem solid #000;
+}
+aside form label select option {
+  border-radius: 1rem;
+}
 
 footer {
   background-color: #361500;
@@ -459,20 +481,54 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
+footer div p {
+  font-size: 0.8rem;
+}
+footer a img {
+  width: 2rem;
+  margin: 0rem 0.3rem;
+}
 
 @media (max-width: 1024px) {
-  nav li {
+  nav a {
+    margin-left: 0.2%;
+  }
+  nav ul li {
     margin: 0.3rem;
+    margin-bottom: 0rem;
+    padding: 1.1rem 2rem;
+  }
+  nav ul li a {
+    font-size: 1rem;
+  }
+  nav ul li:hover {
+    margin: 0.3rem;
+    margin-bottom: 0rem;
     padding: 1.1rem 2rem;
   }
 
   .active {
     margin: 0.3rem;
     padding: 1.1rem 2rem;
+    margin-bottom: 0rem;
   }
 
-  .gato-portada {
-    height: auto;
+  header {
+    margin: 0rem 2rem;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+  header p {
+    font-size: 1rem;
+    margin: 0rem;
+  }
+
+  .container__menu {
+    grid-template-columns: 0.2fr repeat(4, 1fr);
+    grid-template-rows: repeat(2, 0.04fr) repeat(2, 4fr) 0.04fr;
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
   }
 
   .cont-img-portada {
@@ -493,21 +549,96 @@ footer {
     flex-wrap: wrap;
     flex-direction: column;
   }
+
+  .tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .tarjetas div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    width: 21rem;
+    height: 30rem;
+  }
+  .tarjetas div h3 {
+    font-size: 1.8rem;
+  }
+  .tarjetas div p {
+    font-size: 1rem;
+  }
+  .tarjetas div img {
+    width: 17rem;
+    height: 17rem;
+    object-fit: contain;
+    margin-top: 1rem;
+    overflow: hidden;
+  }
+
+  .tarjeta__diasyhora {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: auto;
+  }
+  .tarjeta__diasyhora p {
+    font-size: 2rem;
+  }
+  .tarjeta__diasyhora h2 {
+    font-size: 2rem;
+  }
+  .tarjeta__diasyhora ul li {
+    font-size: 1.1rem;
+  }
+  .tarjeta__diasyhora h3 {
+    font-size: 1rem;
+  }
 }
 @media (max-width: 768px) {
-  nav li {
+  nav a {
+    margin-left: 1%;
+  }
+  nav a img {
+    height: 2rem;
+  }
+  nav ul li {
     margin: 0.2rem;
+    margin-bottom: 0rem;
+    padding: 0.5rem 0.7rem;
+  }
+  nav ul li a {
+    font-size: 1rem;
+  }
+  nav ul li:hover {
+    margin: 0.2rem;
+    margin-bottom: 0rem;
     padding: 0.5rem 0.7rem;
   }
 
   .active {
     margin: 0.2rem;
+    margin-bottom: 0rem;
     padding: 0.5rem 0.7rem;
-    margin-bottom: 0px;
   }
 
-  .img-logo-nav {
-    height: 2.3rem;
+  aside form label h2 {
+    font-size: 1.5rem;
+    margin: 0.5rem;
+  }
+  aside form label select {
+    font-size: 1rem;
+    margin: 0.1rem;
+    padding: 0.3rem 0.2rem;
+    border-radius: 1rem;
+  }
+  aside form label select option {
+    border-radius: 1rem;
   }
 
   .cuestionario {
@@ -521,28 +652,112 @@ footer {
   }
 }
 @media (max-width: 480px) {
-  nav li {
+  nav a {
+    margin-left: 1%;
+  }
+  nav a img {
+    height: 1.5rem;
+  }
+  nav ul li {
     margin: 0.1rem;
+    margin-bottom: 0px;
+    padding: 0.3rem 0.1rem;
+  }
+  nav ul li a {
+    font-size: 0.5rem;
+  }
+  nav ul li:hover {
+    margin: 0.1rem;
+    margin-bottom: 0px;
     padding: 0.3rem 0.1rem;
   }
 
   .active {
     margin: 0.1rem;
-    padding: 0.3rem 0.1rem;
     margin-bottom: 0px;
+    padding: 0.3rem 0.1rem;
   }
 
-  .img-logo-nav {
-    height: 2.1rem;
+  .container__menu {
+    grid-template-columns: 0.1fr repeat(4, 1fr);
+    grid-template-rows: repeat(2, 0.04fr) repeat(2, 4fr) 0.04fr;
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+  }
+
+  aside form label h2 {
+    font-size: 1rem;
+    margin: 0.2rem;
+  }
+  aside form label select {
+    font-size: 0.8rem;
+    margin: 0.1rem;
+    padding: 0.3rem 0.2rem;
+    border-radius: 1rem;
+  }
+  aside form label select option {
+    border-radius: 1rem;
+  }
+
+  .cuestionario__part {
+    font-size: 1rem;
+    margin: 0.3rem;
+    padding: 1.5rem;
   }
 
   .cuestionario {
     margin: 3rem;
-    width: 18rem;
+    width: 20rem;
   }
 
   .cuestionario__completar {
-    width: 13rem;
+    width: 16rem;
     justify-content: center;
+  }
+
+  .cuestionario__btn {
+    width: 9rem;
+    margin: 1rem;
+  }
+
+  .cuestionario__body {
+    margin: 0rem;
+  }
+
+  .tarjetas div {
+    width: 15rem;
+    height: 25rem;
+  }
+  .tarjetas div h3 {
+    font-size: 1rem;
+  }
+  .tarjetas div p {
+    font-size: 0.8rem;
+  }
+  .tarjetas div img {
+    width: 17rem;
+    height: 17rem;
+    object-fit: contain;
+    margin-top: 1rem;
+    overflow: hidden;
+  }
+
+  header {
+    margin: 0rem 0.5rem;
+  }
+  header h1 {
+    font-size: 1.2rem;
+  }
+  header p {
+    font-size: 0.8rem;
+    margin: 0rem;
+  }
+
+  footer div p {
+    font-size: 0.4rem;
+  }
+  footer a img {
+    width: 1rem;
+    margin: 0rem 0.3rem;
   }
 }/*# sourceMappingURL=diseño.css.map */

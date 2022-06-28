@@ -1,0 +1,50 @@
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    div{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+        width: 21rem;
+        height: 30rem;
+        h3{
+            font-size: 1.8rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+        img{
+            width: 17rem;
+            height: 17rem;
+            object-fit:contain;
+            margin-top: 1rem;
+            overflow: hidden;
+        }
+    }
+}
+
+.tarjeta__diasyhora{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: auto;
+    p {
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    ul{
+        li{
+            font-size: 1.1rem;
+        }
+    }
+    h3{font-size: 1rem;
+    }
+}
