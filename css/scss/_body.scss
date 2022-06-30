@@ -20,9 +20,8 @@ body{
                 }
             }
         }
-        div{
+        div:not(.carrusel){
             background-color: #361500;
-            width: 20%;
             padding: 1rem;
             margin: 1rem;
             border: 0.5rem solid #603601;

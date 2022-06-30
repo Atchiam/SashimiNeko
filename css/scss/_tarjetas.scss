@@ -28,14 +28,10 @@
 }
 
 .tarjeta__diasyhora{
-    display: flex;
-    flex-direction: column;
-    flex-wrap:wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    width: auto;
     p {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        margin: 0.5;
+        padding: 0.5;
     }
     h2{
         font-size: 2rem;
@@ -46,17 +42,5 @@
         }
     }
     h3{font-size: 1rem;
-    }
-}
-
-.carrusel{
-    div{
-        width: 25rem; 
-        div{
-            width: auto;   
-        }
-    }
-    button{
-
     }
 }

@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="../assets/imagenes/Logo.png">
     <link rel="stylesheet" href="../css/diseño.css">
 </head>
-<body>
+<body class="carrusel">
     <nav>
         <a class="logo" href="../index.html"><img class="img-logo-nav" src="../assets/imagenes/Logo.png" alt="SashimiNeko-logo" height="55px"></a>
         <ul class="letras__nav nav justify-content-end ">
@@ -17,42 +17,44 @@
             <li><a class="text-center text-decoration-none texto-color" href="./gatos.html">Gatos</a></li>
             <li><a class="text-center text-decoration-none texto-color" href="./adopcion.html">Adopcion</a></li>
             <li><a class="text-center text-decoration-none texto-color" href="./turnos.html">Turnos</a></li>
-            <li class="active"><a class="text-center text-decoration-none texto-color" href="./rescate.html">Rescate</a></li>
+            <li class="activo"><a class="text-center text-decoration-none texto-color" href="./rescate.html">Rescate</a></li>
         </ul>
     </nav>
     <header>
         <h1 class="text-center  1" >Refugios</h1>
     </header>
     
-    <main  class="bodygatitos">
+    <main  class="bodygatitos container-fluid row carrusel">
         <div id="carouselExampleControls carrusel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../assets/imagenes/refigio.jfif" class="d-block w-100" alt="...">
+            <div class="carousel-inner carrusel">
+                <div class="carousel-item active carrusel">
+                    <img class="img-fluid rounded mx-auto d-block rounded carrusel" src="../assets/imagenes/carrucel (1).jpg" class="d-block w-100" alt="...">
                 </div>
-                <div class="carousel-item">
-                    <img src="../assets/imagenes/refigio.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-item carrusel">
+                    <img class="img-fluid rounded mx-auto d-block rounded carrusel" src="../assets/imagenes/carrucel (2).jpg" class="d-block w-100" alt="...">
                 </div>
-                <div class="carousel-item">
-                    <img src="../assets/imagenes/refigio.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-item carrusel">
+                    <img class="img-fluid rounded mx-auto d-block rounded carrusel " src="../assets/imagenes/carrucel (3).jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
-        <div class="tarjeta__diasyhora">
-            <p>si te gustaria aportar o ayudar a los animales podes hacerlo a traves de estos links.</p>
-            <ul>
-                <li><a class="text-center  3 text-decoration-none" href="http://elrefugio.org" target="_blank" rel="noopener noreferrer">El Refugio</a></li>
-                <li><a class="text-center  3 text-decoration-none" href="https://www.instagram.com/adopcionesquilmes/?hl=es" target="_blank" rel="noopener noreferrer">Adopcionesquilmes</a></li>
-                <li><a class="text-center  3 text-decoration-none" href="http://www.refugiosfa.org/" target="_blank" rel="noopener noreferrer">refugiosfa</a></li>
-            </ul>
+        <div class="tarjeta__diasyhora row">
+            <div class="container-fluid row carrusel">
+                <p class= "col-12 mt-4"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis itaque animi deserunt doloribus impedit est placeat reprehenderit earum delectus in culpa asperiores consectetur, at modi magnam pariatur suscipit illo rerum.</p>
+                <p class= "col-12 col-md-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos temporibus fugit nostrum iste. Nemo molestiae facilis doloribus, sint in quisquam mollitia hic! Veritatis suscipit natus, repudiandae earum velit ratione commodi?</p>
+                <p class= "col-12 col-md-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos temporibus fugit nostrum iste. Nemo molestiae facilis doloribus, sint in quisquam mollitia hic! Veritatis suscipit natus, repudiandae earum velit ratione commodi?</p>
+                <p class= "col-12 col-md-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos temporibus fugit nostrum iste. Nemo molestiae facilis doloribus, sint in quisquam mollitia hic! Veritatis suscipit natus, repudiandae earum velit ratione commodi?</p>
+            </div>
+            <div class="carrusel mt-4 col-12 col-md-8">
+                <p>si te gustaria aportar o ayudar a los animales podes hacerlo a traves de estos links.</p>
+            </div>
+            <div class="carrusel col-12 col-md-4">
+                <ul>
+                    <li class="col-3 "><a class="text-center  col-3 text-decoration-none" href="http://elrefugio.org" target="_blank" rel="noopener noreferrer"> El Refugio</a></li>
+                    <li class="col-3"><a class="text-center  col-3 text-decoration-none" href="https://www.instagram.com/adopcionesquilmes/?hl=es" target="_blank" rel="noopener noreferrer">Adopcionesquilmes</a></li>
+                    <li class="col-3"><a class="text-center  col-3 text-decoration-none" href="http://www.refugiosfa.org/" target="_blank" rel="noopener noreferrer">refugiosfa</a></li>
+                </ul>
+            </div>
         </div>
     </main>
     <footer>
