@@ -26,10 +26,17 @@
         }
     }
 }
+.disflex{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
 
 .tarjeta__diasyhora{
     p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin: 0.5;
         padding: 0.5;
     }
@@ -38,9 +45,7 @@
     }
     ul{
         li{
-            font-size: 1.1rem;
+            font-size: 1.5rem;
         }
-    }
-    h3{font-size: 1rem;
     }
 }

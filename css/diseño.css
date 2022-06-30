@@ -215,8 +215,16 @@
   overflow: hidden;
 }
 
+.disflex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+
 .tarjeta__diasyhora p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 0.5;
   padding: 0.5;
 }
@@ -224,10 +232,7 @@
   font-size: 2rem;
 }
 .tarjeta__diasyhora ul li {
-  font-size: 1.1rem;
-}
-.tarjeta__diasyhora h3 {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 @-webkit-keyframes scale-up-center {
@@ -500,12 +505,6 @@ footer a img {
     padding: 1.1rem 2rem;
   }
 
-  .active {
-    margin: 0.3rem;
-    padding: 1.1rem 2rem;
-    margin-bottom: 0rem;
-  }
-
   header {
     margin: 0rem 2rem;
   }
@@ -543,23 +542,9 @@ footer a img {
     flex-direction: column;
   }
 
-  .tarjetas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
   .tarjetas div {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    align-content: center;
-    justify-content: space-between;
     width: 21rem;
     height: 30rem;
-  }
-  .tarjetas div h3 {
-    font-size: 1.8rem;
   }
   .tarjetas div p {
     font-size: 1rem;
@@ -567,29 +552,16 @@ footer a img {
   .tarjetas div img {
     width: 17rem;
     height: 17rem;
-    object-fit: contain;
     margin-top: 1rem;
-    overflow: hidden;
   }
 
-  .tarjeta__diasyhora {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    width: auto;
-  }
   .tarjeta__diasyhora p {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
   .tarjeta__diasyhora h2 {
     font-size: 2rem;
   }
   .tarjeta__diasyhora ul li {
-    font-size: 1.1rem;
-  }
-  .tarjeta__diasyhora h3 {
     font-size: 1rem;
   }
 }
@@ -614,7 +586,7 @@ footer a img {
     padding: 0.5rem 0.7rem;
   }
 
-  .active {
+  .activo {
     margin: 0.2rem;
     margin-bottom: 0rem;
     padding: 0.5rem 0.7rem;
@@ -665,7 +637,7 @@ footer a img {
     padding: 0.3rem 0.1rem;
   }
 
-  .active {
+  .activo {
     margin: 0.1rem;
     margin-bottom: 0px;
     padding: 0.3rem 0.1rem;
@@ -721,9 +693,6 @@ footer a img {
     width: 15rem;
     height: 25rem;
   }
-  .tarjetas div h3 {
-    font-size: 1rem;
-  }
   .tarjetas div p {
     font-size: 0.8rem;
   }
@@ -733,6 +702,16 @@ footer a img {
     object-fit: contain;
     margin-top: 1rem;
     overflow: hidden;
+  }
+
+  .tarjeta__diasyhora p {
+    font-size: 0.9rem;
+  }
+  .tarjeta__diasyhora h2 {
+    font-size: 0.7rem;
+  }
+  .tarjeta__diasyhora ul li {
+    font-size: 0.6rem;
   }
 
   header {

@@ -19,12 +19,6 @@
         }
     }
     
-    .active{
-        margin: 0.3rem;
-        padding: 1.1rem 2rem;
-        margin-bottom: 0rem;
-    }
-
     header{
         margin: 0rem 2rem;
         h1{
@@ -62,53 +56,31 @@
     }
 
     .tarjetas{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
         div{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            align-items: center;
-            align-content: center;
-            justify-content: space-between;
             width: 21rem;
             height: 30rem;
-            h3{
-                font-size: 1.8rem;
-            }
             p{
                 font-size: 1rem;
             }
             img{
                 width: 17rem;
                 height: 17rem;
-                object-fit:contain;
                 margin-top: 1rem;
-                overflow: hidden;
             }
         }
     }
 
     .tarjeta__diasyhora{
-        display: flex;
-        flex-direction: column;
-        flex-wrap:wrap;
-        align-items: center;
-        justify-content: space-evenly;
-        width: auto;
         p {
-            font-size: 2rem;
+            font-size: 1.2rem;
         }
         h2{
             font-size: 2rem;
         }
         ul{
             li{
-                font-size: 1.1rem;
+                font-size: 1rem;
             }
-        }
-        h3{font-size: 1rem;
         }
     }
 }
@@ -137,7 +109,7 @@
         }
     }
 
-    .active{
+    .activo{
         margin: 0.2rem;
         margin-bottom: 0rem;
         padding: 0.5rem 0.7rem;
@@ -174,8 +146,6 @@
 
 }
 
-
-
 @media(max-width:480px){
 
     nav {
@@ -202,7 +172,7 @@
     }
 
 
-    .active{
+    .activo{
         margin: 0.1rem;
         margin-bottom: 0px;
         padding: 0.3rem 0.1rem;
@@ -264,9 +234,6 @@
         div{
             width: 15rem;
             height: 25rem;
-            h3{
-                font-size: 1rem;
-            }
             p{
                 font-size: 0.8rem;
             }
@@ -276,6 +243,20 @@
                 object-fit:contain;
                 margin-top: 1rem;
                 overflow: hidden;
+            }
+        }
+    }
+
+    .tarjeta__diasyhora{
+        p {
+            font-size: 0.9rem;
+        }
+        h2{
+            font-size: 0.7rem;
+        }
+        ul{
+            li{
+                font-size: 0.6rem;
             }
         }
     }
