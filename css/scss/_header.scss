@@ -1,5 +1,5 @@
 header{
-    background-color: #1C0A00;
+    background-color: map-get($colores, $color4 );
     grid-area: header;
     margin: 0rem 5rem;
     h1{

@@ -1,6 +1,6 @@
 footer{
-    background-color: #361500;
-    color: #CC9544;
+    background-color: map-get($colores, $color3 );
+    color: map-get($colores, $color1 );
     text-align: right;
     grid-area: footer;
     display: flex;

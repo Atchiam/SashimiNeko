@@ -1,5 +1,5 @@
 nav {
-    background-color: $colorTersiario ;
+    background-color: map-get($colores, $color3) ;
     color: black;
     display: flex;
     justify-content: space-between;

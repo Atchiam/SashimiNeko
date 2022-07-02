@@ -317,7 +317,7 @@
     transform: translateY(-50px);
     -webkit-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
-    text-shadow: 0 1px 0 #603601, 0 2px 0 #361500, 0 3px 0 #361500, 0 4px 0 #361500, 0 5px 0 #361500, 0 6px 0 #361500, 0 7px 0 #361500, 0 8px 0 #361500, 0 9px 0 #361500, 0 50px 30px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 1px 0 map-get($colores, $color2 ), 0 2px 0 #361500, 0 3px 0 #361500, 0 4px 0 #361500, 0 5px 0 #361500, 0 6px 0 #361500, 0 7px 0 #361500, 0 8px 0 #361500, 0 9px 0 #361500, 0 50px 30px rgba(0, 0, 0, 0.3);
   }
 }
 @keyframes text-pop-up-top {
@@ -361,7 +361,7 @@ body {
 }
 body main {
   grid-area: main;
-  background-color: #603601;
+  background-color: map-get($colores, $color2 );
   width: 100%;
   height: 100%;
 }
@@ -372,7 +372,7 @@ body main div:not(.carrusel) {
   background-color: #361500;
   padding: 1rem;
   margin: 1rem;
-  border: 0.5rem solid #603601;
+  border: 0.5rem solid map-get($colores, $color2 );
   border-radius: 15%;
 }
 body main div:not(.carrusel):hover {
@@ -381,6 +381,55 @@ body main div:not(.carrusel):hover {
 }
 body main div:not(.carrusel) img {
   align-content: center;
+}
+
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.tarjetas div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  width: 21rem;
+  height: 30rem;
+}
+.tarjetas div h3 {
+  font-size: 1.8rem;
+}
+.tarjetas div p {
+  font-size: 1rem;
+}
+.tarjetas div img {
+  width: 17rem;
+  height: 17rem;
+  object-fit: contain;
+  margin-top: 1rem;
+  overflow: hidden;
+}
+
+.disflex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+
+.tarjeta__diasyhora p {
+  font-size: 1.2rem;
+  margin: 0.5;
+  padding: 0.5;
+}
+.tarjeta__diasyhora h2 {
+  font-size: 2rem;
+}
+.tarjeta__diasyhora ul li {
+  font-size: 1.5rem;
 }
 
 nav {
