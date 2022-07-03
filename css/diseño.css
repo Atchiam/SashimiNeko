@@ -361,7 +361,7 @@ body {
 }
 body main {
   grid-area: main;
-  background-color: map-get($colores, $color2 );
+  background-color: #603601;
   width: 100%;
   height: 100%;
 }
@@ -372,7 +372,7 @@ body main div:not(.carrusel) {
   background-color: #361500;
   padding: 1rem;
   margin: 1rem;
-  border: 0.5rem solid map-get($colores, $color2 );
+  border: 0.5rem solid #603601;
   border-radius: 15%;
 }
 body main div:not(.carrusel):hover {
