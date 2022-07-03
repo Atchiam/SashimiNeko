@@ -4,16 +4,14 @@
         }
         ul{
             li{
-                margin: 0.3rem;
+                @include margpad (0.3rem , 1.1rem 2rem);
                 margin-bottom: 0rem;
-                padding: 1.1rem 2rem;
                 a {
                     font-size: 1rem;
                 }
                 &:hover{
-                    margin: 0.3rem;
+                    @include margpad (0.3rem , 1.1rem 2rem);
                     margin-bottom: 0rem;
-                    padding: 1.1rem 2rem;
                 }
             }
         }

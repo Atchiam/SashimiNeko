@@ -22,8 +22,7 @@ body{
         }
         div:not(.carrusel){
             background-color: map-get($colores, $color3 );
-            padding: 1rem;
-            margin: 1rem;
+            @include margpad (1rem , 1rem);
             border: 0.5rem solid #603601;
             border-radius: 15%;
             &:hover:not(.carrusel){
@@ -50,8 +49,7 @@ aside{
                 background-color: map-get($colores, $color1 );
                 font-size: 1rem;
                 width:auto;
-                margin: 0.5rem;
-                padding: 0.3rem 0.5rem;
+                @include margpad (0.5rem , 0.3rem 0.5rem);
                 border-radius: 1rem;
                 border: 0.2rem solid #000 ;
                 option{ 
@@ -101,8 +99,7 @@ aside{
 .tarjeta__diasyhora{
     p {
         font-size: 1.2rem;
-        margin: 0.5;
-        padding: 0.5;
+        @include margpad (0.5 , 0,5);
     }
     h2{
         font-size: 2rem;
