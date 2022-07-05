@@ -1,15 +1,13 @@
 $colores:(
-    color1:#CC9544,
-    color2: #603601,
-    color3: #361500,
-    color4: #1C0A00,
-    color5: #8d6830,
-    color6: #e0a44a,
+    color1 :#CC9544,
+    color2 :#603601,
+    color3 :#361500,
+    color4 :#1C0A00,
+    color5 :#8d6830,
+    color6 :#e0a44a,
 );
 
-@mixin  margpad($margin , $pading ){
+@mixin  margpad ($margin, $pading){
     margin: $margin;
     padding: $pading;
 }
-
-@include margpad ()

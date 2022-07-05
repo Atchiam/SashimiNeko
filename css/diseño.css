@@ -21,6 +21,15 @@
   grid-row-gap: 1rem;
   grid-template-areas:"header  header  header  header  header" "aside   main    main    main    main" "aside   main    main    main    main" "aside   main    main    main    main" "footer  footer  footer  footer  footer";
 }
+.texto{
+  font-size: 1.2rem;
+  background-color: #361500;
+  margin: 0.3rem;
+  padding: 0.5rem;
+  border-radius: 25px;
+  color: #CC9544;
+  text-align: justify;
+}
 
 .texto-color {
   color: #361500;
@@ -365,6 +374,7 @@ body main {
   width: 100%;
   height: 100%;
 }
+
 body main form fieldset div div label {
   padding: 0.5rem;
 }

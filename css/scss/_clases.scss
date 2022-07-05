@@ -1,3 +1,4 @@
+
 .container__menu{
     display: grid;
     grid-template-columns: 0.45fr repeat(4, 1fr);
@@ -11,8 +12,15 @@
                         "footer  footer  footer  footer  footer";
 }
 
+.texto{
+    font-size: 1.2rem;
+    margin: 0.3rem;
+    color: #361500;
+    text-align: justify;
+}
+
 .texto-color{
-    color: map-get($colores, $color3 );
+    color: #361500;
     font-weight: bold;
 }
 .texto-color__menus{
