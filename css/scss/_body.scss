@@ -9,6 +9,11 @@ body{
         background-color: map-get($colores, $color2 );
         width: 100%;
         height: 100%;
+        p {
+            font-size: 1.2rem;
+            margin: 0.3rem;
+            text-align: justify;
+        }
         form{
             fieldset{
                 div{
