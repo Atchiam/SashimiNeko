@@ -2,12 +2,12 @@
 body{
     font-size:62.5%;
     background-color: #1C0A00;
-    color:map-get($colores, $color1 );
+    color:map-get($colores, color1 );
     width: 100%;
     height: 100%;
     main{
         grid-area: main;
-        background-color: map-get($colores, $color2 );
+        background-color: map-get($colores, color2 );
         width: 100%;
         height: 100%;
         p {
@@ -27,7 +27,7 @@ body{
             }
         }
         div:not(.carrusel){
-            background-color: map-get($colores, $color3 );
+            background-color: map-get($colores, color3 );
             @include margpad (1rem , 1rem);
             border: 0.5rem solid #603601;
             border-radius: 15%;
@@ -44,7 +44,7 @@ body{
 
 aside{
     grid-area: aside;
-    background-color: map-get($colores, $color3 );
+    background-color: map-get($colores, color3 );
     form{
         label{
             h2{
@@ -52,7 +52,7 @@ aside{
                 margin: 0.5rem;
             }
             select {   
-                background-color: map-get($colores, $color1 );
+                background-color: map-get($colores, color1 );
                 font-size: 1rem;
                 width:auto;
                 @include margpad (0.5rem , 0.3rem 0.5rem);
