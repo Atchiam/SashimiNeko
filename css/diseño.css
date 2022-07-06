@@ -1,6 +1,6 @@
 * {
-  padding: 0px;
-  margin: 0px;
+  margin: 0rem;
+  padding: 0rem;
   box-sizing: border-box;
 }
 
@@ -10,25 +10,17 @@
   grid-template-rows: repeat(2, 0.2fr) repeat(2, 4fr) 0.2fr;
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
-  grid-template-areas:"header  header  header  header  header" "aside   main    main    main    main" "aside   main    main    main    main" "aside   main    main    main    main" "footer  footer  footer  footer  footer";
+  grid-template-areas: "header  header  header  header  header" "aside   main    main    main    main" "aside   main    main    main    main" "aside   main    main    main    main" "footer  footer  footer  footer  footer";
 }
 
-.container__menu {
-  display: grid;
-  grid-template-columns: 0.45fr repeat(4, 1fr);
-  grid-template-rows: repeat(2, 0.2fr) repeat(2, 4fr) 0.2fr;
-  grid-column-gap: 1rem;
-  grid-row-gap: 1rem;
-  grid-template-areas:"header  header  header  header  header" "aside   main    main    main    main" "aside   main    main    main    main" "aside   main    main    main    main" "footer  footer  footer  footer  footer";
-}
-.texto{
+.texto {
   font-size: 1.2rem;
   background-color: #361500;
   margin: 0.3rem;
   padding: 0.5rem;
   border-radius: 25px;
   color: #CC9544;
-  text-align: justify;
+  text-align: center;
 }
 
 .texto-color {
@@ -50,6 +42,8 @@
 .bodygatitos__cuestionario {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .title__main {
@@ -60,19 +54,12 @@
   font-family: "Tiro Devanagari Marathi", serif;
 }
 
-.text-pop-up-top {
+.text-pop-up-top:not(.carrusel) {
   -webkit-animation: text-pop-up-top 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: text-pop-up-top 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-.title__main {
-  text-align: center;
-  font-style: normal;
-  font-size: 5rem;
-  font-family: "Tiro Devanagari Marathi", serif;
-}
-
-.text-pop-up-top {
+.text-pop-up-top:not(.carrusel) {
   -webkit-animation: text-pop-up-top 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: text-pop-up-top 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -96,7 +83,7 @@
   background-color: rgba(127, 255, 212, 0);
 }
 
-.kenburns-right {
+.kenburns-right:not(.carrusel) {
   -webkit-animation: kenburns-right 1.5s ease-in-out reverse backwards;
   animation: kenburns-right 1.5s ease-in-out reverse backwards;
 }
@@ -106,7 +93,7 @@
   height: auto;
 }
 
-.scale-down-center {
+.scale-down-center:not(.carrusel) {
   -webkit-animation: scale-down-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: scale-down-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -127,8 +114,8 @@
 
 .cuestionario {
   background-color: #361500;
-  padding: 1rem;
   margin: 1rem 12rem;
+  padding: 1rem;
   border-radius: 2rem;
   width: 37rem;
   display: flex;
@@ -136,8 +123,8 @@
 }
 
 .cuestionario__body {
-  padding: 1rem;
   margin: 1rem;
+  padding: 1rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -181,68 +168,9 @@
   justify-content: space-around;
 }
 
-.scale-in-ver-bottom {
+.scale-in-ver-bottom:not(.carrusel) {
   -webkit-animation: scale-in-ver-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
   animation: scale-in-ver-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
-}
-
-.activo {
-  color: black;
-  background-color: #e0a44a;
-  margin: 0.5rem;
-  padding: 1rem 3rem;
-  margin-bottom: 0rem;
-  border-radius: 25px 25px 0px 0px;
-  display: flex;
-}
-
-.tarjetas {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.tarjetas div {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  align-content: center;
-  justify-content: space-between;
-  width: 21rem;
-  height: 30rem;
-}
-.tarjetas div h3 {
-  font-size: 1.8rem;
-}
-.tarjetas div p {
-  font-size: 1rem;
-}
-.tarjetas div img {
-  width: 17rem;
-  height: 17rem;
-  object-fit: contain;
-  margin-top: 1rem;
-  overflow: hidden;
-}
-
-.disflex {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-  align-items: center;
-}
-
-.tarjeta__diasyhora p {
-  font-size: 1.2rem;
-  margin: 0.5;
-  padding: 0.5;
-}
-.tarjeta__diasyhora h2 {
-  font-size: 2rem;
-}
-.tarjeta__diasyhora ul li {
-  font-size: 1.5rem;
 }
 
 @-webkit-keyframes scale-up-center {
@@ -374,23 +302,48 @@ body main {
   width: 100%;
   height: 100%;
 }
-
+body main p {
+  font-size: 1.2rem;
+  margin: 0.3rem;
+  text-align: justify;
+}
 body main form fieldset div div label {
   padding: 0.5rem;
 }
 body main div:not(.carrusel) {
   background-color: #361500;
-  padding: 1rem;
   margin: 1rem;
+  padding: 1rem;
   border: 0.5rem solid #603601;
   border-radius: 15%;
 }
-body main div:not(.carrusel):hover {
+body main div:not(.carrusel):hover:not(.carrusel) {
   -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) 0.1s both;
   animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) 0.1s both;
 }
 body main div:not(.carrusel) img {
   align-content: center;
+}
+
+aside {
+  grid-area: aside;
+  background-color: #361500;
+}
+aside form label h2 {
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+aside form label select {
+  background-color: #CC9544;
+  font-size: 1rem;
+  width: auto;
+  margin: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 1rem;
+  border: 0.2rem solid #000;
+}
+aside form label select option {
+  border-radius: 1rem;
 }
 
 .tarjetas {
@@ -442,9 +395,14 @@ body main div:not(.carrusel) img {
   font-size: 1.5rem;
 }
 
-nav {
+header {
+  background-color: #1C0A00;
+  margin: 0rem;
+  grid-area: header;
+}
+header nav {
   background-color: #361500;
-  color: black;
+  color: #1C0A00;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -452,46 +410,28 @@ nav {
   align-content: stretch;
   position: sticky;
   top: 0px;
-  grid-area: nav;
   align-self: baseline;
   z-index: 100;
 }
-nav a {
+header nav a {
   margin-left: 5%;
 }
-nav ul {
+header nav ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-nav ul li {
-  color: black;
+header nav ul li {
   background-color: #8d6830;
-  margin: 0.5rem;
-  margin-bottom: 0rem;
-  padding: 1rem 3rem;
-  margin-bottom: 0px;
-  border-radius: 25px 25px 0px 0px;
-  display: flex;
   transition: 0s;
 }
-nav ul li a {
+header nav ul li a {
   color: #1C0A00;
   font-size: 1rem;
   text-decoration: none;
 }
-nav ul li:hover {
-  color: black;
+header nav ul li:hover {
   background-color: #e0a44a;
-  margin: 0.5rem;
-  padding: 1rem 3rem;
-  margin-bottom: 0px;
-}
-
-header {
-  background-color: #1C0A00;
-  grid-area: header;
-  margin: 0rem 0rem;
 }
 header h1 {
   text-align: center;
@@ -501,31 +441,24 @@ header h1 {
   font-weight: 0rem;
   text-decoration-line: underline;
 }
-header p {
-  font-size: 1.2rem;
-  margin: 0.3rem;
-  text-align: justify;
+
+.etiqueta, header nav ul li, header nav ul li:hover {
+  color: #1C0A00;
+  margin: 0.5rem;
+  padding: 1rem 3rem;
+  margin-bottom: 0rem;
+  border-radius: 25px 25px 0px 0px;
+  display: flex;
 }
 
-aside {
-  grid-area: aside;
-  background-color: #361500;
-}
-aside form label h2 {
-  font-size: 2rem;
+.activo {
+  color: #1C0A00;
+  background-color: #e0a44a;
   margin: 0.5rem;
-}
-aside form label select {
-  background-color: #CC9544;
-  font-size: 1rem;
-  width: auto;
-  margin: 0.5rem;
-  padding: 0.3rem 0.5rem;
-  border-radius: 1rem;
-  border: 0.2rem solid #000;
-}
-aside form label select option {
-  border-radius: 1rem;
+  padding: 1rem 3rem;
+  margin-bottom: 0rem;
+  border-radius: 25px 25px 0px 0px;
+  display: flex;
 }
 
 footer {
@@ -553,16 +486,16 @@ footer a img {
   }
   nav ul li {
     margin: 0.3rem;
+    padding: 1.1rem 1rem;
     margin-bottom: 0rem;
-    padding: 1.1rem 2rem;
   }
   nav ul li a {
     font-size: 1rem;
   }
   nav ul li:hover {
     margin: 0.3rem;
+    padding: 1.1rem 1rem;
     margin-bottom: 0rem;
-    padding: 1.1rem 2rem;
   }
 
   header {
@@ -571,7 +504,8 @@ footer a img {
   header h1 {
     font-size: 1.5rem;
   }
-  header p {
+
+  body main p {
     font-size: 1rem;
     margin: 0rem;
   }
@@ -600,6 +534,12 @@ footer a img {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+  }
+
+  .texto {
+    font-size: 1.2rem;
+    margin: 0.3rem;
+    padding: 0.5rem;
   }
 
   .tarjetas div {
@@ -646,6 +586,12 @@ footer a img {
     padding: 0.5rem 0.7rem;
   }
 
+  .etiqueta, header nav ul li, header nav ul li:hover {
+    margin: 0.2rem;
+    margin-bottom: 0rem;
+    padding: 0.5rem 0.7rem;
+  }
+
   .activo {
     margin: 0.2rem;
     margin-bottom: 0rem;
@@ -664,6 +610,12 @@ footer a img {
   }
   aside form label select option {
     border-radius: 1rem;
+  }
+
+  .texto {
+    font-size: 1.2rem;
+    margin: 0.3rem;
+    padding: 0.5rem;
   }
 
   .cuestionario {
@@ -692,6 +644,18 @@ footer a img {
     font-size: 0.5rem;
   }
   nav ul li:hover {
+    margin: 0.1rem;
+    margin-bottom: 0px;
+    padding: 0.3rem 0.1rem;
+  }
+
+  .texto {
+    font-size: 1rem;
+    margin: 0.2rem;
+    padding: 0.5rem;
+  }
+
+  .etiqueta, header nav ul li, header nav ul li:hover {
     margin: 0.1rem;
     margin-bottom: 0px;
     padding: 0.3rem 0.1rem;

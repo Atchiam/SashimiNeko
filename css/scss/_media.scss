@@ -5,13 +5,13 @@
         }
         ul{
             li{
-                @include margpad (0.3rem , 1.1rem 2rem);
+                @include margpad (0.3rem , 1.1rem 1rem);
                 margin-bottom: 0rem;
                 a {
                     font-size: 1rem;
                 }
                 &:hover{
-                    @include margpad (0.3rem , 1.1rem 2rem);
+                    @include margpad (0.3rem , 1.1rem 1rem);
                     margin-bottom: 0rem;
                 }
             }
@@ -59,6 +59,12 @@
         flex-direction: column;
     }
 
+    .texto{
+        font-size: 1.2rem;
+        margin: 0.3rem;
+        padding: 0.5rem;
+        }
+
     .tarjetas{
         div{
             width: 21rem;
@@ -89,6 +95,7 @@
     }
 }
 
+
 @media(max-width:768px){
     nav {
         a {margin-left: 1%;
@@ -113,6 +120,11 @@
         }
     }
 
+    .etiqueta{
+        margin: 0.2rem;
+        margin-bottom: 0rem;
+        padding: 0.5rem 0.7rem;
+    }
     .activo{
         margin: 0.2rem;
         margin-bottom: 0rem;
@@ -138,6 +150,12 @@
             }
         }
     }
+
+    .texto{
+        font-size: 1.2rem;
+        margin: 0.3rem;
+        padding: 0.5rem;
+        }
 
     .cuestionario{
         margin: 1rem 2rem;
@@ -176,6 +194,16 @@
     }
 
 
+    .texto{
+        font-size: 1rem;
+        margin: 0.2rem;
+        padding: 0.5rem;
+        }
+    .etiqueta{
+        margin: 0.1rem;
+        margin-bottom: 0px;
+        padding: 0.3rem 0.1rem;
+    }
     .activo{
         margin: 0.1rem;
         margin-bottom: 0px;
