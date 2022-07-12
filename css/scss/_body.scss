@@ -28,13 +28,9 @@ body{
         }
         div:not(.carrusel){
             background-color: map-get($colores, color3 );
-            @include margpad (1rem , 1rem);
+            @include margpad (1rem , 0rem);
             border: 0.5rem solid #603601;
-            border-radius: 15%;
-            &:hover:not(.carrusel){
-                -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.1s both;
-                animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.1s both;
-            }
+            border-radius: 5%;
             img {
                 align-content: center;
             }
@@ -80,21 +76,28 @@ aside{
         justify-content: space-between;
         width: 21rem;
         height: 30rem;
-        h3{
-            font-size: 1.8rem;
+        &:hover{
+            -webkit-animation: shadow-drop-br 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: shadow-drop-br 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+        }
+        h2{
+            font-size: 1.4rem;
         }
         p{
-            font-size: 1rem;
+            font-size:0.8rem;
         }
         img{
-            width: 17rem;
-            height: 17rem;
+            width: 18rem;
+            height: 18rem;
             object-fit:contain;
             margin-top: 1rem;
             overflow: hidden;
+            border-radius: 1rem;
         }
     }
-}
+
+
 .disflex{
     display: flex;
     flex-direction: column;

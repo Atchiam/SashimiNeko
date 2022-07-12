@@ -35,15 +35,6 @@
     font-size: 5rem;
     font-family: 'Tiro Devanagari Marathi', serif;
 }
-.text-pop-up-top:not(.carrusel) {
-	-webkit-animation: text-pop-up-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: text-pop-up-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-.text-pop-up-top:not(.carrusel) {
-	-webkit-animation: text-pop-up-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: text-pop-up-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
 
 .gato-portada{
     background-image: url(../assets/imagenes/MainGato2.jpg);
@@ -64,21 +55,10 @@
     background-color: rgba(127, 255, 212, 0);
 }
 
-.kenburns-right:not(.carrusel) {
-    -webkit-animation: kenburns-right 1.5s ease-in-out reverse backwards;
-            animation: kenburns-right 1.5s ease-in-out reverse backwards;
-}
-
-
 .imag-portada{
     max-width: 100%;
     height: auto;
 }
-
-.scale-down-center:not(.carrusel) {
-    -webkit-animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-            animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    }
 
 .btn{
     background-color: map-get($colores, color1 );
@@ -124,6 +104,7 @@
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
+    align-items: center;
 }
 
 .cuestionario__btn{
@@ -144,8 +125,3 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
-.scale-in-ver-bottom:not(.carrusel) {
-    -webkit-animation: scale-in-ver-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
-            animation: scale-in-ver-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
-    }
