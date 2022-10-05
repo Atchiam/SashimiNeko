@@ -4,39 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="¡Proba los mejores postres y cafetería en sashimi neko! Opciones vegetarianas y veganas.">
-    <meta name="keywords"  content="CAFE, GATOS, SASHIMI NEKO, CAT CAFE, VEGETARIANO, VEGANO, GLUTEN-FREE CAFETERIA, BOLLERIA, TORTAS, FACTURAS, COMIDAS, MINUTAS">
-    <title>SashimiNeko-Menu</title>
+    <meta name="description" content="En SashumiNeko podes brindarle un hogar a nuestros gatos">
+    <meta name="keywords"  content="HTML, ASP, JS, META, PALABRAS CLAVE, EJEMPLO">
+    <title>SashimiNeko-Adopciones</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="shortcut icon" href="../assets/imagenes/Logo.png">
     <link rel="stylesheet" href="../css/diseño.css">
 </head>
-<body class="container__menu">
+<body>
     <header>
         <nav>
             <a class="logo" href="../index.html"><img class="img-logo-nav" src="../assets/imagenes/Logo.png" alt="SashimiNeko-logo" height="55px"></a>
-            <ul class="nav justify-content-end">
-                <li class="activo text-center  text-decoration-none texto-color"><a href="./menu.html">Menu</a></li>
-                <li><a class="text-center text-decoration-none texto-color" href="./carrito.html">carrito</a></li>
-                <li><a class="text-center  text-decoration-none texto-color" href="./gatos.html">Gatos</a></li>
-                <li><a class="text-center  text-decoration-none texto-color" href="./turnos.html">Turnos</a></li>
-                <li><a class="text-center text-decoration-none texto-color" href="./rescate.html">Rescate</a></li>
-
+            <ul class="nav justify-content-end ">
+                <li><a class="text-center  6 text-decoration-none texto-color" href="./menu.html">Menu</a></li>
+                <li class="activo text-center  6 text-decoration-none texto-color" ><a href="./carrito.html">carrito</a></li>
+                <li><a class="text-center  6 text-decoration-none texto-color" href="./gatos.html">Gatos</a></li>
+                <li><a class="text-center  6 text-decoration-none texto-color" href="./turnos.html">Turnos</a></li>
+                <li><a class="text-center  6 text-decoration-none texto-color" href="./rescate.html">Rescate</a></li>
             </ul>
         </nav>
-        <h1 class="text-center">SashimiNeko - Menu</h1>
+    
+        <h1 class="text-center">SashimiNeko - Adopcion</h1>
     </header>
-    <aside>
-        <div class=" d-flex flex-column justify-content-center tarjetas">
-            <img class="card-img-top" style="width: 7rem; height: 7rem" src="../assets/imagenes/compra.png"  alt="carrito">
-            <span id="cartCounter" style="width: 7rem"  class="texto card-text"></span>
+    <main class="bodygatitos bodygatitos__cuestionario">
+        <div class="container"  id="tabla">
         </div>
-    </aside>
-    <main class="bodygatitos">
-
-        <h1 class="texto">Tortitas, bollería, facturas y comidas,  contamos con opciones de menú vegetariano, vegano y gluten-free.</h1>
-        <section id="menu_tarjetas" class="tarjetas">
-        </section>
     </main>
     <footer>
         <div>
@@ -51,11 +43,11 @@
             </a>
         </div>
         <div>
-            <p class="text-center  text-decoration-none mb-0">
+            <p class="text-center  6 text-decoration-none mb-0">
                 Tel: *******
                 Direccion: calle falsa 123 UKS
             </p>
-            <p class="text-center  text-decoration-none mb-0">
+            <p class="text-center  6 text-decoration-none mb-0">
                 PRIVACY POLICY
                 TERMS & CONDITIONS
                 ©2022
@@ -63,7 +55,7 @@
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-        <script src="../app.js"></script>
-    </footer>
-</body>
+        <script src="../carrito.js"></script>
+        
+    </body>
 </html>
